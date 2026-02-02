@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Common parameters -->
+    <arg name="loop_rate" default="1000" doc="Ros_rate in Hz"/>
+    
+    <!-- Mini 40 parameters -->
+    <arg name="mini40_name" default="ati_mini40" doc="Object name for Mini 40 sensor"/>
+    <arg name="mini40_ifname" default="enx00e04c6800dc" doc="Network interface name for Mini 40"/>
+    <arg name="mini40_slave_id" default="1" doc="Slave ID for Mini 40"/>
+    
+    <!-- Mini 45 parameters -->
+    <arg name="mini45_name" default="ati_mini45" doc="Object name for Mini 45 sensor"/>
+    <arg name="mini45_ifname" default="enx207bd2c36d89" doc="Network interface name for Mini 45"/>
+    <arg name="mini45_slave_id" default="1" doc="Slave ID for Mini 45"/>
+    
+    <!-- Mini 40 Node -->
+    <node pkg="ati_sensor" type="ati_ros" name="ati_ros_$(arg mini40_name)" output="screen">
+        <param name="loop_rate" value="$(arg loop_rate)" />
+        <param name="object_name" value="$(arg mini40_name)" />
+        <param name="ifname" value="$(arg mini40_ifname)"/>
+        <param name="slave_id" value="$(arg mini40_slave_id)" />
+    </node>
+    
+    <!-- Mini 45 Node -->
+    <node pkg="ati_sensor" type="ati_ros" name="ati_ros_$(arg mini45_name)" output="screen">
+        <param name="loop_rate" value="$(arg loop_rate)" />
+        <param name="object_name" value="$(arg mini45_name)" />
+        <param name="ifname" value="$(arg mini45_ifname)"/>
+        <param name="slave_id" value="$(arg mini45_slave_id)" />
+    </node>
+</launch> 

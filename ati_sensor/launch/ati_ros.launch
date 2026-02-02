@@ -1,0 +1,15 @@
+<launch>
+	<!-- logger params-->
+	<arg name="loop_rate"	default="1000"	doc="Ros_rate in Hz"/>
+	<arg name="object_name"	default="ati_mini40"	doc="Object name to capture in relevant topics" />
+	
+	
+	<!-- load the logging node -->
+	<node pkg="ati_sensor" type="ati_ros" name="ati_ros_$(arg object_name)" output="screen" >
+		<!-- Load parameters onto server using argument or default values above -->
+		<param name="loop_rate"	value="$(arg loop_rate)" />
+		<param name="object_name"	value="$(arg object_name)" />
+		<param name="ifname"	value="enx00e04c6800dc"/>
+		<param name="slave_id"	value="1" />
+	</node>
+</launch>

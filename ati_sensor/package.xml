@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ati_sensor</name>
+  <version>0.0.1</version>
+  <description>Extension of NASA-JPL to publish measurements to ROS</description>
+
+  <maintainer email="nikolaos.evangeliou@nyu.edu">Nikolaos Evangeliou</maintainer>
+
+  <author>Nikolaos Evangeliou</author>
+  
+  <license>GPL</license>
+
+  <url type="website">https://github.com/nevangeliouNYUAD</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>geometry_msgs</depend>
+ 
+</package>
