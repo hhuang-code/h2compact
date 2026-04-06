@@ -1,6 +1,6 @@
 # H2-COMPACT: Human–Humanoid Co-Manipulation via Adaptive Contact Trajectory Policies
 
-[![IsaacGym](https://img.shields.io/badge/IsaacGym-Preview4-b.svg)](https://developer.nvidia.com/isaac-gym) [![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/abs/2505.17627) <a href="https://h2compact.github.io/h2compact/"><img alt="Project" src="https://img.shields.io/badge/-Project%20Page-lightgrey?logo=Google%20Chrome&color=informational&logoColor=white"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
+[![IsaacGym](https://img.shields.io/badge/IsaacGym-Preview4-b.svg)](https://developer.nvidia.com/isaac-gym) [![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/abs/2505.17627) <a href="https://h2compact.github.io/h2compact/"><img alt="Project" src="https://img.shields.io/badge/-Project%20Page-lightgrey?logo=Google%20Chrome&color=informational&logoColor=white"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/hhuang-code/h2compact/blob/main/LICENSE.txt)
 
 This guide provides detailed instructions for setting up and using the force sensor system, data collection, and robot control for the H2-COMPACT project.
 
